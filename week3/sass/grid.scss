@@ -1,0 +1,33 @@
+
+.grid{
+
+	width: -webkit-calc(25% - 40px);
+	width: -moz-calc(25% -40px);
+	width: calc(25% - 40px);
+	margin: 20px 20px;
+	border: 1px solid #f0f0f0;
+	float:left;
+	height: 240px;
+	padding:10px;
+}
+h1{
+	text-align:center;
+	font-size:2em;
+	font-weight:bold;
+	color:orange;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+p{
+	text-align:center;
+	font-size:1.5em;
+	color: #606060;
+	text-transform:uppercase;
+	line-height:2em;
+
+}
+.age{
+	@extend p;
+	text-transform:none;
+	font-size:1.2em;
+}

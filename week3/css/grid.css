@@ -1,0 +1,36 @@
+/* line 2, ../sass/grid.scss */
+.grid {
+  width: -webkit-calc(25% - 40px);
+  width: -moz-calc(25% -40px);
+  width: calc(25% - 40px);
+  margin: 20px 20px;
+  border: 1px solid #f0f0f0;
+  float: left;
+  height: 240px;
+  padding: 10px;
+}
+
+/* line 13, ../sass/grid.scss */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 21, ../sass/grid.scss */
+p, .age {
+  text-align: center;
+  font-size: 1.5em;
+  color: #606060;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+/* line 29, ../sass/grid.scss */
+.age {
+  text-transform: none;
+  font-size: 1.2em;
+}
