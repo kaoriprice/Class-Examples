@@ -3,7 +3,7 @@
  * Author: Earl Swigert
  */
 
-define(['backbone', 'underscore', '$', 'text!templates/singlestudentview.html'], function(Backbone, _, $, template) {
+define(['backbone', 'underscore', '$', 'text!templates/student.html'], function(Backbone, _, $, template) {
 	
 	var SingleStudentView = Backbone.View.extend({
 		template:_.template(template),

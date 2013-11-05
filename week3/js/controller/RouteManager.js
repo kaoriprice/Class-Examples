@@ -1,5 +1,5 @@
-define(['$', 'model/AppState', 'view/Home', 'view/StudentsView'], 
-	function($, AppState, Home, StudentsView) {
+define(['$', 'model/AppState', 'view/Home', 'view/StudentsView', 'view/GridStudentsView'], 
+	function($, AppState, Home, StudentsView, GridStudentsView) {
 
 	function RouterManager($cont) {
 
@@ -11,6 +11,9 @@ define(['$', 'model/AppState', 'view/Home', 'view/StudentsView'],
 		var studentsView = new StudentsView();
 		studentsView.render();
 
+		var gridStudentsView = new GridStudentsView();
+		gridStudentsView.render();
+
 		var currentState = null;
 
 		function loadNewState(m, newState) {
@@ -20,6 +23,9 @@ define(['$', 'model/AppState', 'view/Home', 'view/StudentsView'],
 					break;
 				case 'students' : 
 					changeState(studentsView);
+				break;
+				case 'grids' : 
+					changeState(gridStudentsView);
 					break;
 			}
 		}
